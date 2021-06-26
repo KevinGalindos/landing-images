@@ -4,7 +4,7 @@ import { Navbar } from "../Navbar";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 
 import Logo from "../../assets/images/logo.png";
-import IconSearch from "../../assets/images/Search.svg";
+import { IconSearch } from "../../assets/images/search.svg";
 
 export const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -21,7 +21,7 @@ export const Header = () => {
             </a>
           </div>
           <div className="header_navigation_titles">
-            <Navbar visible={visible} handleClick={handleClick}/>
+            <Navbar visible={visible} handleClick={handleClick} />
             <a className="search" href="/">
               <img src={IconSearch} alt="Search" />
             </a>
