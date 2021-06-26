@@ -4,7 +4,7 @@ import { Navbar } from "../Navbar";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 
 import Logo from "../../assets/images/logo.png";
-import { IconSearch } from "../../assets/images/search.svg";
+import IconSearch from "../../assets/images/search.svg";
 
 export const Header = () => {
   const [visible, setVisible] = useState(false);
