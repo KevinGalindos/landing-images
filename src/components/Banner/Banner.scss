@@ -1,0 +1,75 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+
+  .bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 900px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.65);
+  }
+  &_content {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_text {
+      display: flex;
+      height: 70%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      h1 {
+        font: {
+          size: 40px;
+          weight: 700;
+          family: Montserrat;
+        }
+        color: #ffff;
+        letter-spacing: 12px;
+      }
+      p {
+        letter-spacing: 3px;
+        line-height: 22px;
+        color: #ffffff;
+        font: {
+          size: 17px;
+          weight: 400;
+          family: "Questrial";
+        }
+        text-align: center;
+        width: 60%;
+      }
+      button {
+        width: 170px;
+        height: 40px;
+        background-color: #ffffff;
+        border: none;
+        letter-spacing: 2px;
+        color: #ff5773;
+        font: {
+          size: 10px;
+          weight: 400;
+          family: "Questrial";
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:960px){
+ .banner{
+   &_content h1{
+     text-align: center;
+   }
+ } 
+}

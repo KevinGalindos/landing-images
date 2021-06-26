@@ -1,0 +1,19 @@
+.seemore{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  button{
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+    background-color: #ff5672;
+    color: white;
+    border-color: transparent;
+    height: 40px;
+    font-family: Questrial;
+  }
+}

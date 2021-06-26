@@ -1,0 +1,24 @@
+$timer : -0.1;
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    color: #fbcdd4;
+    font-size: 19px;
+    @for $i from 1 through 7 {
+      $timer : $timer + .1;
+      &:nth-child(#{$i}){
+        animation: arrows 1.4s #{$timer}s infinite ease-in;
+      }
+    }
+  }
+}
+
+@keyframes arrows {
+  50% {
+    color: #fc758c;
+    transform: translateY(20px);
+  }
+}

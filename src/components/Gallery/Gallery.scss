@@ -1,0 +1,10 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &_cards {
+    gap: 10px;
+  }
+}

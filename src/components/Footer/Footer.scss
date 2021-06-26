@@ -1,0 +1,32 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  padding: 20px 0;
+  &_copyrights, &_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    letter-spacing: 3px;
+    color:#c2cfd7;
+    a{
+      color: #ff5672;
+      font-weight: 600;
+    }
+    font:{
+      family:Questrial;
+      weight:400;
+      size:13px;
+    };
+  }
+  img{
+    height: 15px;
+  }
+
+  &_social{
+    gap: 20px;
+  }
+}
